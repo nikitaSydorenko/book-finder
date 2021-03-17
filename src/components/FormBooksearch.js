@@ -28,7 +28,6 @@ const FormBookSearch = () => {
     }
   },
   [sendRequest]);
-  console.log(title);
   return (
     <div className="container">
       <h3>Find Books</h3>
@@ -38,12 +37,22 @@ const FormBookSearch = () => {
         </div>
         <button className="btn btn-danger" disabled={sendRequest} onClick={() => setSendRequest(true)} type="submit">Search</button>
       </form>
-      {books.map((book) => {
-        console.log(book);
-        return (
-          <img src={`${book.volumeInfo.imageLinks.thumbnail}`} key={book.id} alt={book.volumeInfo.title} />
-        );
-      })}
+      <div className="books">
+        {books.map((book) => {
+          console.log(book);
+          return (
+            <div className="wrapper">
+              <div className="book-container">
+                <h6>{book.volumeInfo.publisher}</h6>
+                <img src={`${book.volumeInfo.imageLinks.thumbnail}`} key={book.id} alt={book.volumeInfo.title} />
+              </div>
+              <div className="description" />
+              <h4>{book.volumeInfo.title}</h4>
+              <p>{book.volumeInfo.subtitle || 'No description :('}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
