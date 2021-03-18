@@ -1,9 +1,55 @@
 .container {
     margin-top: 40px;
+
 }
+
+.btn{
+    margin-bottom: 15px;
+}
+
+.books{
+    background-color: #ecdebf;
+    padding: 20px;
+    min-height: 600px;
+    max-height: 1100px;
+    border-radius: 5px;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 7px;
+    margin-bottom: 40px;
+}
+
 h3{
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 45px;
+    color: #000000;
+}
+img{
+    min-width: 128px;
+    max-height: 180px;
+    min-height: 180px;
+    margin: 6px;
+    opacity: revert;
+}
+
+.wrapper {
+    margin: 0px;
+    background-color: #fff7ea;
+    padding: 4px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: rgba(28,12,0,0.71);
+}
+p, h4{
+    text-align: center;
 }
