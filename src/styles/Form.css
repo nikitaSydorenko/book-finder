@@ -1,6 +1,5 @@
 .container {
     margin-top: 40px;
-
 }
 
 .btn{
@@ -26,6 +25,7 @@ h3{
     font-size: 45px;
     color: #000000;
 }
+
 img{
     min-width: 128px;
     max-height: 180px;
@@ -47,9 +47,11 @@ img{
     align-items: center;
     justify-content: center;
 }
+
 p{
     color: rgba(28,12,0,0.71);
 }
+
 p, h4{
     text-align: center;
 }
